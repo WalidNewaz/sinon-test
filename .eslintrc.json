@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "mocha/no-exclusive-tests": "error"
+  },
+  "globals": {
+    "describe": true,
+    "before": true,
+    "after": true,
+    "it": true,
+    "beforeEach": true,
+    "afterEach": true
+  }
+}
