@@ -34,7 +34,8 @@ describe('AllFunctions', () => {
     it('should call the callback function', () => {
       const callback = sinon.spy();
       AllFunctions.myCaller(true, callback);
-      assert(callback.calledOnce);
+      // assert(callback.calledOnce);
+      assert(callback.should.have.been.calledOnce);
     });
   });
 });
