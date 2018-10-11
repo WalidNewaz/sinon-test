@@ -45,7 +45,7 @@ describe('AllFunctions', () => {
       // AllFunctionsStub.saveUser(user, AllFunctions.sayHello);
       // AllFunctionsStub.saveUser.restore();
       // sinon.assert.calledOnce(callback);
-      assert.equal('Hi there Walid Newaz!', AllFunctionsStub.saveUser(user, AllFunctions.sayHello));
+      assert.equal('Hi there Walid Newaz!', AllFunctions.saveUser(user, AllFunctions.sayHello));
     });
   });
 });
