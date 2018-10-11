@@ -37,5 +37,15 @@ describe('AllFunctions', () => {
       // assert(callback.calledOnce);
       assert(callback.should.have.been.calledOnce);
     });
+    const AllFunctionsStub = require('./stubs/AllFunctionsStub.js');
+    console.log(AllFunctionsStub);
+    it('should call the callback function via a stub', () => {
+      // const callback = sinon.spy();
+      const user = 'Walid Newaz';
+      // AllFunctionsStub.saveUser(user, AllFunctions.sayHello);
+      // AllFunctionsStub.saveUser.restore();
+      // sinon.assert.calledOnce(callback);
+      assert.equal('Hi there Walid Newaz!', AllFunctionsStub.saveUser(user, AllFunctions.sayHello));
+    });
   });
 });
